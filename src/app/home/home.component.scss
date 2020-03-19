@@ -1,0 +1,36 @@
+*{
+   /*
+  border-color: red;
+  border-style: solid;
+  border-width: 1px; */
+  color: white;
+}
+
+#job{
+  margin-left: -2.5%;
+}
+
+.icons{
+  display: flex;
+  text-align: center;
+  text-decoration: none;
+  div{
+    h3{
+      color: white;
+    }
+    img{
+      margin: 0 auto;
+    }
+  }
+}
+
+img{
+  width: 60%;
+}
+
+.container{
+  font-size: 2em;
+  h2{
+    font-size: 1.5em;
+  }
+}
