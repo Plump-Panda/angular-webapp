@@ -1,55 +1,78 @@
 @import url('https://fonts.googleapis.com/css?family=Nunito:400,700&display=swap');
-
 $header-colour: #30B84E;
 
-body {
+main {
   margin: 0;
   font-family: 'Nunito', 'sans-serif';
   font-size: 18px;
-  color: white;
 }
 
 .container {
   width: 80%;
-  margin: 0 auto;
+  margin: 0 auto 2.5%;
+  color: white;
 }
 
 header {
   background: $header-colour;
-  padding: 1em 0;
 
-  a {
+
+  a{
     color: white;
     text-decoration: none;
   }
   a.logo {
-    font-weight: bold;
+    font-weight: lighter;
+    padding: 5px;
+  }
+  a:hover{
+    background: darken($header-colour, 10%);
+    color: white;
+    text-decoration: none;
   }
 
   nav {
     float: right;
-
     ul {
       list-style-type: none;
-      margin: 0;
+      margin: 9px 0;
       display: flex;
-
       li a {
-        padding: 1em;
-
+        padding: 9px 10px;
         &:hover {
           background: darken($header-colour, 10%);
+          color: white;
+          text-decoration: none;
         }
       }
     }
   }
 }
 
-h1 {
-  margin-top: 2em;
-}
-
 
 .background{
   background-color: black;
 }
+
+// Extra small devices (portrait phones, less than 576px)
+@media (max-width: 575.98px) {
+
+}
+
+// Small devices (landscape phones, less than 768px)
+@media (max-width: 767.98px) {
+
+}
+
+// Medium devices (tablets, less than 992px)
+@media (max-width: 991.98px) {
+
+}
+
+// Large devices (desktops, less than 1200px)
+@media (max-width: 1199.98px) {
+
+}
+
+// Extra large devices (large desktops)
+// No media query since the extra-large breakpoint has no upper bound on its width
