@@ -19,6 +19,7 @@ export class ProjectsComponent implements OnInit {
   //Gets the data from github and puts it in the JSON variable
   getData(){
     this.service.getGithubInfo().subscribe(data => {
+
       //Loops through the data and gets each item as needed
       for(const d of (data as any)){
         this.json.push({
@@ -27,6 +28,8 @@ export class ProjectsComponent implements OnInit {
           language: d.language
         });
       }
+      //document.getElementById("holder").style.display = "none";
+      //document.getElementsByTagName("table")[0].style.display = "table";
       //Just outputs to the console to make sure we got the right data
       console.log(this.json);
     });

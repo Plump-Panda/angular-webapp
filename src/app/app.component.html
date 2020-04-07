@@ -1,19 +1,19 @@
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<header class="align-top">
+  <div class="container">
+    <a routerLink="/" class="logo navbar-brand">Joshua Fung</a>
+    <nav class="navbar-expand-md">
+      <ul>
+        <li><a href="#" routerLink="/">Home</a></li>
+        <li><a href="#" routerLink="/projects">Projects</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
 <div class="background">
-  <header>
-    <div class="container">
-      <a routerLink="/" class="logo navbar-brand">Joshua Fung</a>
-      <nav class="fixed-top navbar-expand-md">
-        <ul>
-          <li><a href="#" routerLink="/">Home</a></li>
-          <li><a href="#" routerLink="/projects">Projects</a></li>
-          <li><a href="#" routerLink="/resume">Résumé</a></li>
-        </ul>
-      </nav>
-    </div>
-  </header>
-
   <main class="container">
     <router-outlet></router-outlet>
   </main>
 </div>
+<footer class="align-bottom">
+  <p style="color: white">Some words</p>
+</footer>

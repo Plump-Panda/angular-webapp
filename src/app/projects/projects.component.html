@@ -1,7 +1,20 @@
-<p><i>Pick a hero from the list</i></p>
-<ul>
-  <!-- *ngFor is a for loop and it loops through the variable 'json' which is in the github.service file -->
-  <li *ngFor="let data of json">
-    {{data.name}}, {{data.description}}, {{data.language}}
-  </li>
-</ul>
+<div class="container>">
+  <h1>Software Repository</h1>
+
+  <table>
+    <!-- *ngFor is a for loop and it loops through the variable 'json' which is in the github.service file -->
+    <tr *ngFor="let data of json">
+      <th>
+        {{data.name}}
+      </th>
+      <th>
+        {{data.description}}
+      </th>
+      <th>
+        {{data.language}}
+      </th>
+    </tr>
+  </table>
+</div>
+
+
