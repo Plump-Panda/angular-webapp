@@ -8,14 +8,8 @@
 #job{
   margin-left: -2.5%;
 }
-
-h1, h2, h3{
-  a{
-    color: white;
-  }
-  a:hover{
-    color: #ffdfdf;
-  }
+a{
+  color: white;
 }
 
 .icons{
@@ -32,5 +26,14 @@ img{
   font-size: 2em;
   h2{
     font-size: 1.5em;
+  }
+}
+
+mat-card{
+  margin: 0 2%;
+  background-color: #575757;
+  color: white;
+  img{
+    margin-top: 20%;
   }
 }
