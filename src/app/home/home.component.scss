@@ -4,7 +4,15 @@
   border-style: solid;
   border-width: 1px;
 } */
+/* Ripple import not working for some reason
+@use "node_modules/@material/ripple";
 
+.my-surface {
+  @include ripple.surface;
+  @include ripple.radius-bounded;
+  @include ripple.states;
+}
+ */
 #job{
   margin-left: -2.5%;
 }
@@ -20,6 +28,19 @@ a{
 img{
   max-width: 60%;
   padding-bottom: 15%;
+}
+
+#github:hover{
+  color: #F4511E;
+}
+#outlook:hover{
+  color: #0277BD;
+}
+#resume:hover{
+  color: #90CAF9;
+}
+#linkedin:hover{
+  color: #0288D1;
 }
 .container{
   margin-top: 10%;
